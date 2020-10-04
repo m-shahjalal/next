@@ -1,0 +1,138 @@
+.nav {
+    background-color: #2a9d8fff;
+    padding: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: beige;
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.logo-container {
+    font-size: 20px;
+    display: flex;
+    flex: 1;
+    font-weight: bold;
+
+    &:hover {
+        color: #e76f51ff;
+    }
+
+    ;
+
+    .next {
+        padding-left: 8px;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    order: 2;
+    background-color: #2a9d8fff;
+
+    li {
+        list-style: none;
+        padding-left: 20px;
+
+        :hover {
+            color: #e76f51ff;
+        }
+
+        a {
+            color: beige;
+            padding: 5px;
+        }
+    }
+}
+
+.hamberbug {
+    padding: 30px 20px;
+    color: beige;
+    display: none;
+    cursor: pointer;
+    z-index: 11;
+    :hover {
+        color: #e76f51ff;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    li {
+        list-style: none;
+    }
+
+    .nav {
+        padding: 0;
+    }
+
+    .logo-container a {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .nav-container {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .show {
+        display: block;
+        background-color: #2a9d8fff;
+        text-align: center;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 1;
+        transition: all .25s ease;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        min-width: 100%;
+
+        .nav-item {
+            margin: 0px;
+            height: 70px;
+            align-self: center;
+            justify-self: center;
+            width: 350px;
+
+            a {
+                padding: 20px 100px;
+                border-radius: 8px;
+
+                &:hover {
+                    border: 1px solid #2a9d8fff;
+                    color: beige;
+                }
+            }
+
+
+        }
+    }
+
+    .hamberbug {
+        display: block;
+    }
+
+    .hide {
+        opacity: 0;
+        height: 0;
+        line-height: 0;
+    }
+}
