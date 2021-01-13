@@ -1,5 +1,6 @@
 @media only screen and (max-width: 750px) {
-    body {
-        font-size: 12px;
-    }
+  body {
+    font-size: 12px;
+    font-size: normal;
+  }
 }
